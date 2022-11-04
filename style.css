@@ -1,0 +1,422 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0 auto;
+}
+
+.container{
+background: #F0F0F0;
+height: 926px;
+min-width: 428px;
+position: relative;
+margin: 10px auto;
+}
+
+header{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+width: 126px;
+height: 49px;
+position: absolute;
+left: 130px;
+top: 20px;
+}
+
+.logo {
+ width: 13px;
+height: 20px;
+}
+
+p {
+  font-family: Inter;
+font-size: 24px;
+font-weight: 800;
+line-height: 29px;
+letter-spacing: 0em;
+color: #0500FFBF;
+
+}
+form { 
+position: absolute;
+min-width: 356px;
+height: 554px;
+left: 36px;
+top: 148px;
+border-radius: 20px;
+background: #FFFAFA;
+box-shadow: 2px 23px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.wrapper-alignment {
+min-width: 324px;
+height: 448.11px;
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 16px;
+top: 48px;
+padding: 0px;
+gap: 48px; 
+  
+}
+
+.field-wrap {
+  display: flex;
+flex-direction: column;
+gap: 24px;
+min-width: 324px;
+height: 353.11px;
+}
+
+.flex-input-icons {
+  display: flex;
+}
+
+.mail-icon {
+height: 15px;
+width: 15px;
+position: absolute;
+top: 38.5px;
+left: 15px;
+
+}
+
+.phone-icon {
+height: 20px;
+width: 20px;
+position: absolute;
+top: 130px;
+left: 15px;
+}
+
+.naira-icon {
+height: 15px;
+width: 15px;
+position: absolute;
+top: 227px;
+left: 15px;
+}
+
+input::placeholder {
+padding-left: 30px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+
+}
+
+.email-box {
+display: flex;
+flex-direction: column;
+gap: 8px;
+min-width: 324px;
+height: 70px;
+}
+
+.phone-box {
+  display: flex;
+flex-direction: column;
+gap: 8px;
+min-width: 324px;
+height: 70.56px;
+}
+
+.amount-box {
+display: flex;
+flex-direction: column;
+gap: 8px;
+min-width: 324px;
+height: 70.56px;
+
+}
+
+.recharge-type-box {
+display: flex;
+flex-direction: column;
+gap: 8px;
+min-width: 324px;
+height: 70px;
+}
+
+.recharge-type-btn {
+  display: flex;
+flex-direction: row;
+gap: 16px;
+min-width: 324px;
+height: 47px;
+}
+
+.input-label {
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+}
+
+
+.email {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+padding: 16px;
+padding-left:40px;
+gap: 32px;
+border: 1px solid #000000;
+border-radius: 8px;
+height: 47px;
+width: 324px;
+}
+
+.phone, .mtn{
+border-radius: 8px;
+padding: 16px;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+gap: 27px;
+width: 324px;
+height: 47.56px;
+border: 1px solid #000000;
+padding-left:40px;
+}
+
+
+.amount {
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+padding: 16px;
+gap: 32px;
+width: 324px;
+height: 47.56px;
+border: 1px solid #000000;
+border-radius: 8px;
+padding-left:40px;
+}
+
+.Airtime {
+height: 47px;
+width: 154px;
+border-radius: 8px;
+padding: 16px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background: #3A3434;
+cursor: pointer;
+border: 1px solid black;
+}
+
+.airtime-text, .Data, .recharge-now {
+  font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+}
+
+.airtime-text {
+  color: #FFFFFF;
+}
+
+
+.Data {
+  width: 154px;
+height: 47px;
+/* //border: 1px solid #000000; */
+border-radius: 8px;
+background: white;
+color: #3A3434;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+border: 1px solid black;
+}
+
+
+.recharge-now {
+  width: 324px;
+height: 47px;
+background: #0500FF;
+box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+border: none;
+outline: none;
+color: #FFFFFF;
+
+}
+
+.amountValidation, .phoneValidation{
+  position: absolute;
+/*   //background: blue; */
+  height: 20px;
+  width: 200px;
+  color: red;
+  padding: 5px;
+  font-size: 11px;
+  left: 40%;
+  
+}
+
+.hidden , .dataTick{
+  display: none;
+}
+
+.congrats-box{
+  padding: 15px;
+  position: absolute;
+  font-size: 13px;
+/*   width: 260px; */
+  height: 300px;
+  background: #ffff;
+  border-radius: 8px;
+  box-shadow: -12px 10px 15px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  text-align: center;
+}
+
+.congrats{
+  width: 200px;
+  height: 200px;
+  margin: 20px 50px ;
+  /*background: yellow;*/
+
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+hidden, .dataTick{
+  display: none;
+}
+
+
+
+/* @media screen and (min-width: 680px) {
+  
+form {
+  width: 520px;
+height: 677px;
+  left: 200px;
+top: 173px;
+}
+  
+.email, .phone,  .amount  {
+  width: 100%;
+  height:58px;
+  padding-left: 55px;
+}
+.Airtime, .Data, .recharge-now {
+  width: 100%;
+  height:58px;
+ 
+}
+
+.input-label{
+font-size: 20px;
+line-height: 24px;
+
+}
+
+input::placeholder{
+font-size: 18px;
+line-height:21.78px;
+padding-left: 40px;
+}
+  
+.wrapper-alignment {
+  width: 440px;
+  height: 576px;
+  left: 40px;
+  top: 50px;
+  gap: 58px;
+}
+
+.field-wrap {
+  width: 440px;
+  height: 460px;
+  gap: 48px;
+}
+  
+.mail-icon {
+  
+  top: 48.5px;
+  height: 23px;
+  width: 23px;
+
+
+}
+
+.phone-icon {
+  top: 165px;
+  height: 23px;
+  width: 23px;
+
+
+}
+
+.naira-icon {
+height: 23px;
+width: 23px;
+top: 285px;
+
+
+}
+
+.airtime-text, .Data, .recharge-now {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+header {
+    left: 380px;
+  }
+
+.logo {
+  width: 15px;
+   height: 25px;
+}
+p {
+font-size: 36px;
+line-height: 44px;
+}
+
+  @media screen and (min-width: 1028px) {
+
+    form {
+      left: 430px;
+    }
+
+    header{
+    left: 580px;
+  }
+    
+  }
+
+
+  
+  
+}
+
+ */

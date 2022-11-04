@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <img src="icons/phonie-logo.png" alt="logo" class="logo">
+      <p>Phonie</p>
+    </header>
+
+    <form>
+      <div class="wrapper-alignment">
+        <div class="field-wrap">
+
+          <div class="email-box">
+            <label for="email" class="input-label">Email Address</label>
+            <div class="flex-input-icons">
+              <img class="mail-icon" src="icons/Mail.png" />
+              <input type="email" class="email" id="email" placeholder="Enter email address" />
+            </div>
+          </div>
+
+          <div class="phone-box">
+            <label for="phone" class="input-label">Phone Number</label>
+            <div class="flex-input-icons">
+              <img class="phone-icon" src="icons/Phone.png" />
+              <p class="phoneValidation hidden">
+                Phone number cannot be less than 11
+              </p>
+              <input type="tel" class="phone" maxlength="11" placeholder="Enter phone number" value="" />
+            </div>
+          </div>
+
+          <div class="amount-box">
+            <label for="amount" class="input-label">Amount</label>
+            <div class="flex-input-icons">
+              <img class="naira-icon" src="icons/Naira.png">
+              <p class="amountValidation hidden">invalid recharge amount</p>
+              <input type="number" class="amount" pattern="[0-9]*" placeholder="Enter recharge amount" />
+            </div>
+          </div>
+
+          <div class="recharge-type-box">
+            <label class="input-label">Recharge Type</label>
+            <div class="recharge-type-btn">
+              <button class="Airtime hide">
+                <span class="airtime-text hide">Airtime</span>
+                <span class="airtime-icon">
+                  <img class="defaulTick hide" src="icons/circled-tick-icon.png" />
+                </span>
+              </button>
+
+              <button class="Data">
+                <span class="data-text">Data</span>
+                <span class="data-icon">
+                  <img class="dataTick ticked" src="icons/circled-tick-icon.png" />
+                </span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <button class="recharge-now">Recharge now</button>
+        
+
+
+    </form>
+
+    <div class = "congrats-box hidden">
+          <p class = "congrats-text">Airtime Recharge successful</p>
+          <img class = "congrats" src="icons/congrats.png" />
+        </div>
+      </div>
+    <div class = "overlay hidden"></div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
